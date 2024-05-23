@@ -1,0 +1,132 @@
+.t-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.capsule {
+    border-radius: 20px;
+    padding: 50px 30px 30px 30px;
+    background-color: var(--ion-color-primary);
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+
+    ion-button {
+        height: 50px;
+        width: 150px;
+        margin: 20px auto auto auto;
+
+        &.sec-b {
+            margin: auto 0 auto auto;
+            width: 60px;
+            height: 60px;
+            --background: #ff0000;
+            display: none;
+        }
+
+        &.tog {
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            --border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            transform: rotate(-180deg);
+        }
+    }
+
+    span {
+        margin-top: 30px;
+    }
+
+    &.min {
+        // height: 100px;
+        padding: 30px;
+
+        .dis {
+            display: none;
+        }
+
+        ion-button.sec-b {
+            display: block;
+        }
+
+        ion-button.tog {
+            transform: rotate(0);
+        }
+
+        .sec {
+            margin: auto 5px;
+        }
+    }
+}
+
+.tt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.sec {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: #e5e8ff;
+    border-radius: 10px;
+    margin: auto 10px;
+    color: #000000;
+
+    h4 {
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+.div {
+    width: 70%;
+    height: 7px;
+    border-radius: 20px;
+    background-color: #e5e8ff;
+    margin: 30px auto auto auto;
+}
+
+.ll {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.log {
+    padding: 20px;
+    background-color: #f6f7ff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    span {
+        display: flex;
+        align-items: center;
+
+        ion-icon {
+            margin-right: 2px;
+        }
+
+        small {
+            font-weight: 500;
+        }
+    }
+}
+
+.desc {
+    h4 {
+        font-size: 15px;
+    }
+
+    small {
+        font-size: 12px;
+        opacity: .7;
+    }
+}

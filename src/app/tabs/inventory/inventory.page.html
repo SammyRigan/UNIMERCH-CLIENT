@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <app-head [view]="'inventory'"></app-head>
+  <div class="cats">
+    <ion-button fill="clear" [ngClass]="{'sel': category === 'all'}" (click)="category = 'all'"><small>All products</small></ion-button>
+    <ion-button fill="clear" [ngClass]="{'sel': category === 'home'}" (click)="category = 'home'"><ion-img src="assets/icon/homeb.png"></ion-img><small>home care</small></ion-button>
+    <ion-button fill="clear" [ngClass]="{'sel': category === 'personal'}" (click)="category = 'personal'"><ion-img src="assets/icon/creamb.png"></ion-img><small>personal care</small></ion-button>
+    <ion-button fill="clear" [ngClass]="{'sel': category === 'skin'}" (click)="category = 'skin'"><ion-img src="assets/icon/sunscreenb.png"></ion-img><small>skin care</small></ion-button>
+    <ion-button fill="clear" [ngClass]="{'sel': category === 'oral'}" (click)="category = 'oral'"><ion-img src="assets/icon/toothb.png"></ion-img><small>oral care</small></ion-button>
+  </div>
+  <div class="prods pad">
+    <div class="product" [routerLink]="['/tabs/product-details']">
+      <ion-avatar><ion-img src="assets/img/horlicksr.jpg"></ion-img></ion-avatar>
+      <div class="desc">
+        <h4>Horlicks malt drink</h4>
+        <small>24 units left</small>
+      </div>
+    </div>
+    <div class="product low" [routerLink]="['/tabs/product-details']">
+      <ion-avatar><ion-img src="assets/img/vasline.webp"></ion-img></ion-avatar>
+      <div class="desc">
+        <h4>Vaseline body lotion</h4>
+        <small>5 units left</small>
+      </div>
+      <ion-icon name="alert-circle"></ion-icon>
+    </div>
+    <div class="product" [routerLink]="['/tabs/product-details']">
+      <ion-avatar><ion-img src="assets/img/dove.webp"></ion-img></ion-avatar>
+      <div class="desc">
+        <h4>Dove body wash</h4>
+        <small>13 units left</small>
+      </div>
+    </div>
+    <div class="product" [routerLink]="['/tabs/product-details']">
+      <ion-avatar><ion-img src="assets/img/comfort.webp"></ion-img></ion-avatar>
+      <div class="desc">
+        <h4>Comfort washing liquid</h4>
+        <small>28 units left</small>
+      </div>
+    </div>
+  </div>
+</ion-content>

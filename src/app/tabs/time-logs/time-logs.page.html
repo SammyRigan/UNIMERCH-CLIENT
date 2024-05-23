@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <app-head [view]="'Time Logs'"></app-head>
+  <div class="t-wrap pad">
+    <div class="capsule" [ngClass]="{'min': minCapsule}">
+      <ion-button class="icon tog" size="small" (click)="minCapsule = !minCapsule"><ion-icon name="chevron-down"></ion-icon></ion-button>
+      <div class="tt">
+        <div class="sec"><h4>00</h4></div>:<div class="sec"><h4>00</h4></div>:<div class="sec"><h4>00</h4></div>
+        <ion-button class="icon sec-b"><ion-icon name="open-outline"></ion-icon></ion-button>
+      </div>
+      <div class="dis">
+        <div class="div"></div>
+        <span>
+          <small>General</small>
+          <small>09:00 am to 06:00 pm</small>
+        </span>
+        <ion-button color="light">check out</ion-button>
+      </div>
+    </div>
+    <div class="ll">
+      <div class="log">
+        <div class="desc">
+          <h4>Monday, 3 May 2024</h4>
+          <small>09:23 am - 08:00 pm</small>
+        </div>
+        <span><ion-icon name="time-outline"></ion-icon><small>08:24</small></span>
+      </div>
+      <div class="log">
+        <div class="desc">
+          <h4>Wednesday, 5 May 2024</h4>
+          <small>09:00 am - 06:32 pm</small>
+        </div>
+        <span><ion-icon name="time-outline"></ion-icon><small>09:02</small></span>
+      </div>
+      <div class="log">
+        <div class="desc">
+          <h4>Monday, 3 May 2024</h4>
+          <small>09:23 am - 08:00 pm</small>
+        </div>
+        <span><ion-icon name="time-outline"></ion-icon><small>08:24</small></span>
+      </div>
+      <div class="log">
+        <div class="desc">
+          <h4>Monday, 3 May 2024</h4>
+          <small>09:23 am - 08:00 pm</small>
+        </div>
+        <span><ion-icon name="time-outline"></ion-icon><small>08:24</small></span>
+      </div>
+      <div class="log">
+        <div class="desc">
+          <h4>Monday, 3 May 2024</h4>
+          <small>09:23 am - 08:00 pm</small>
+        </div>
+        <span><ion-icon name="time-outline"></ion-icon><small>08:24</small></span>
+      </div>
+    </div>
+  </div>
+</ion-content>

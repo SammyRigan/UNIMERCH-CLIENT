@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+  <app-head [view]="'dashboard'"></app-head>
+  <div class="sales pad">
+    <div class="s-card">
+      <span><ion-icon name="pricetag"></ion-icon><small>Total Sales</small></span>
+      <h4>GHS 35,489.00</h4>
+      <p>257 units sold</p>
+      <ion-img src="assets/img/knot.png"></ion-img>
+      <div class="up"><small>+35%</small></div>
+    </div>
+  </div>
+  <div class="rest pad">
+    <div class="one">
+      <div class="sp">
+        <small>Inventory</small>
+        <ion-icon name="layers"></ion-icon>
+      </div>
+      <div class="ht">
+        <h4>22 <small>units left</small></h4>
+        <!-- <small class="ri"><ion-icon name="information-circle-outline"></ion-icon>units left</small> -->
+      </div>
+      <div class="ht">
+        <h4>Horlicks Malt Drink</h4>
+        <small class="ri"><ion-icon name="information-circle-outline"></ion-icon>units left</small>
+      </div>
+      <div class="o-pic" [ngStyle]="{'background-image': 'url(assets/img/horlicks.webp)'}"></div>
+      <!-- <ion-img src="assets/img/horlicks.webp"></ion-img> -->
+    </div>
+    <div class="two">
+      <div class="time">
+        <div class="dg">
+          <ion-icon name="time"></ion-icon>
+          <ion-toggle [checked]="true" mode="ios" color="light"></ion-toggle>
+        </div>
+        <div class="t-info">
+          <h4>00:50</h4>
+          <small>Checked in at 9:00 am</small>
+        </div>
+        <ion-button color="light">check out</ion-button>
+      </div>
+      <div class="top">
+        <div class="te">
+          <small>Top sold</small>
+          <ion-icon name="podium"></ion-icon>
+        </div>
+        <div class="te-in">
+          <h4>Ideal Milk</h4>
+        </div>
+        <div class="te-num">
+          <h4>GHS 14.6k</h4>
+          <small>2000 units sold</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bot pad">
+    <div class="yo lk">
+      <div class="te">
+        <small>Top category</small>
+        <ion-icon name="ribbon"></ion-icon>
+      </div>
+      <ion-img src="assets/img/line.png"></ion-img>
+      <div class="io">
+        <h4>Personal Care</h4>
+      </div>
+    </div>
+    <div class="yo wed">
+      <!-- <div class="te">
+        <small>Top sold</small>
+        <ion-icon name="podium"></ion-icon>
+      </div> -->
+      <ion-img src="assets/img/rain.png"></ion-img>
+      <div class="io">
+        <h4>23°</h4>
+      </div>
+      <div class="ht" style="padding: 0;">
+        <h4>Rainy</h4>
+        <small class="ri"><ion-icon name="information-circle-outline"></ion-icon>affects sales</small>
+      </div>
+    </div>
+  </div>
+</ion-content>

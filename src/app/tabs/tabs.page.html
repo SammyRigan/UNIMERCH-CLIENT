@@ -1,0 +1,33 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="dashboard">
+      <div class="sel"></div>
+      <ion-icon name="menu"></ion-icon>
+      <!-- <ion-icon name="storefront-outline"></ion-icon>
+      <ion-icon name="storefront"></ion-icon> -->
+    </ion-tab-button>
+    <ion-tab-button tab="inventory">
+      <div class="sel"></div>
+      <ion-icon name="layers"></ion-icon>
+      <!-- <ion-badge [hidden]="cartItems.length === 0">{{ cartItems.length > 9 ? '9+' : cartItems.length }}</ion-badge> -->
+      <!-- <ion-icon name="bag-handle-outline"></ion-icon>
+      <ion-icon name="bag-handle"></ion-icon> -->
+    </ion-tab-button>
+    <ion-tab-button tab="time-logs">
+      <div class="sel"></div>
+      <ion-icon name="time"></ion-icon>
+      <!-- <ion-icon name="heart-outline"></ion-icon>
+      <ion-icon name="heart"></ion-icon> -->
+    </ion-tab-button>
+    <ion-tab-button tab="analytics">
+      <div class="sel"></div>
+      <ion-icon name="podium"></ion-icon>
+    </ion-tab-button>
+    <!-- <ion-tab-button tab="profile">
+      <div class="sel"></div>
+      <ion-avatar>
+        <span *ngIf="!profile?.profileImgUrl"><small>{{ profile?.firstname?.charAt(0) + '' + profile?.lastname?.charAt(0) }}</small></span><ion-img *ngIf="profile.profileImgUrl" [src]="profile?.profileImgUrl"></ion-img>
+      </ion-avatar>
+    </ion-tab-button> -->
+  </ion-tab-bar>
+</ion-tabs>

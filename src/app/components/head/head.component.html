@@ -1,0 +1,8 @@
+<div class="head pad">
+  <div class="location" *ngIf="view === 'dashboard'">
+    <span><ion-icon name="location-outline"></ion-icon><small>Location</small></span>
+    <h4>West Hills Mall Shoprite</h4>
+  </div>
+  <p *ngIf="view !== 'dashboard'">{{ view }}</p>
+  <ion-avatar><ion-img src="assets/img/girl.jpg"></ion-img></ion-avatar>
+</div>
